@@ -1,2 +1,4 @@
 # Recommender-System
-Recommender System via Matrix Factorization and Ensemble Modeling
+In this project, I attempted to construct a recommendation system to promote users with new movies that are likely to match their tastes. The two methods discussed in this project are first, matrix factorization, and secondly, ensemble modeling on top of matrix factorization. In other words, the predicted results from matrix factorization become one of the features for the second stage model. I discovered that the ensemble approach is able to decrease the mean absolute error (MAE) of our predictions by a noticeable margin compared the naive matrix factorization approach. 
+
+One major challenge that I faced throughout the experimentation is that given a large dataset, both our matrix factorization algorithm and second stage machine learning models require a long time to execute. Therefore, future work can be focused on running the models with better computation resources, for example, on GPU.
